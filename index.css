@@ -614,6 +614,12 @@ x-leaflet {
 }
 
 @media (max-width:620px) {
+  .search-form input,
+  .route-inputs input {
+    /* iOS Safari zooms the page when focusing inputs smaller than 16px. */
+    font-size: 16px;
+  }
+
   .search-card {
     top: max(10px, env(safe-area-inset-top));
     left: 10px;
